@@ -80,12 +80,37 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "vim",
-        "lua",
-        "vimdoc",
+        "bash",
+        "fish",
+        "comment",
+        "css",
         "html",
-        "css"
+        "javascript",
+        "jsdoc",
+        "jsonc",
+        "lua",
+        "luadoc",
+        "markdown",
+        "yaml",
+        "regex",
+        "scss",
+        "toml",
+        "typescript",
+        "vim",
+        "vimdoc",
+        -- Go
+        "go",
+        "gomod",
+        "gosum",
+        "gowork",
+        "printf",
       },
+      highlight = {
+        enable = true,
+        use_languagetree = true,
+      },
+
+      indent = { enable = true },
     },
   },
 

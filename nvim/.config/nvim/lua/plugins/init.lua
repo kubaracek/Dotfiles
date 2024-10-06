@@ -1,9 +1,9 @@
 -- must be before lazy setup
- vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46_cache"
+vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46_cache"
 
- -- must be after lazy setup
- dofile(vim.g.base46_cache .. "defaults")
- dofile(vim.g.base46_cache .. "statusline")
+-- must be after lazy setup
+dofile(vim.g.base46_cache .. "defaults")
+dofile(vim.g.base46_cache .. "statusline")
 
 return {
   {
@@ -77,15 +77,26 @@ return {
   },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
         "vim",
         "lua",
         "vimdoc",
         "html",
         "css"
-  		},
-  	},
+      },
+    },
+  },
+
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- any options
+    },
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+    },
   },
 }

@@ -6,8 +6,12 @@ local lspconfig = require "lspconfig"
 local util = lspconfig.util
 
 -- EXAMPLE
-local servers = { "html", "cssls", "gopls" }
+local servers = { "html", "cssls", "gopls", "ts_ls" }
 local nvlsp = require "nvchad.configs.lspconfig"
+
+-- Disable the virtual text varnings that are displayed by default.
+-- I use tiny-inline-diagnstics plugin that takes care of that
+vim.diagnostic.config({virtual_text=false})
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do

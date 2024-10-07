@@ -45,5 +45,10 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
+
+-- LSPSaga
+map("n", "K", "<cmd>Lspsaga hover_doc<cr>")
+map("n", "<leader>gi", "<cmd>Lspsaga finder imp")
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 return M

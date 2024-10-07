@@ -36,14 +36,6 @@ return {
     end,
   },
 
-  { -- null-ls is for formatting
-    "jose-elias-alvarez/null-ls.nvim",
-    ft = "go",
-    opts = function()
-      return require "configs.null-ls"
-    end,
-  },
-
   {
     "mfussenegger/nvim-dap",
     init = function()
@@ -125,15 +117,17 @@ return {
     },
   },
 
+  { import = "plugins.spec.none-ls" },
   { import = "plugins.spec.neogit" },
   { import = "plugins.spec.vim-illuminate" },
-  { import = "plugins.spec.dropbar" },
+  { import = "plugins.spec.lspsaga" },
+  -- { import = "plugins.spec.dropbar" },
   { import = "plugins.spec.edgy" },
   { import = "plugins.spec.hop" },
   { import = "plugins.spec.markview" },
   { import = "plugins.spec.matchup" },
   { import = "plugins.spec.multicursor" },
-  { import = "plugins.spec.outline" },
+  -- { import = "plugins.spec.outline" },
   { import = "plugins.spec.precognition" },
   { import = "plugins.spec.regexplainer" },
   { import = "plugins.spec.tiny-code-action" },

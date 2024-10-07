@@ -17,8 +17,8 @@ M = {
     }
   },
   base46 = {
-    theme = "onedark",
-    transparency = true,
+    theme = "catppuccin",
+    transparency = false,
   },
 
   lsp = { signature = false }, -- Noice is doin this already

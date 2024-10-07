@@ -139,4 +139,5 @@ return {
   { import = "plugins.spec.ts-context-commentstring" },
   { import = "plugins.spec.undo-tree" },
   { import = "plugins.spec.zen-mode" },
+  { import = "plugins.spec.nvim-surround" },
 }

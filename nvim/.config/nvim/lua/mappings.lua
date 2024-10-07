@@ -46,7 +46,7 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
 -- Show lsp doc for whatever under cursor
-map('n', 'K', '<cmd>Lspsaga hover_doc<cr>')
+map("n", "K", "<cmd>Lspsaga hover_doc<cr>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 return M

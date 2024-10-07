@@ -140,4 +140,5 @@ return {
   { import = "plugins.spec.undo-tree" },
   { import = "plugins.spec.zen-mode" },
   { import = "plugins.spec.nvim-surround" },
+  { import = "plugins.spec.faster-jk"},
 }

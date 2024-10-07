@@ -15,7 +15,22 @@ return {
       lightbulb = {
         virtual_text = false,
       },
+      outline = {
+        close_after_jump = true,
+        keys = { jump = "<CR>" },
+      },
     })
+
+    -- lsp keymaps
+    vim.api.nvim_create_autocmd("LspAttach", {
+      group = vim.api.nvim_create_augroup("UserLspConfig", {}),
+      callback = function(ev)
+        -- Enable completion triggered by <c-x><c-o>
+        vim.bo[ev.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
+      end,
+    })
+
+
   end,
   event = "LspAttach",
   dependencies = {

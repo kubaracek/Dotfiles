@@ -17,7 +17,6 @@ opt.scrolloff = 10
 opt.wrap = false
 o.relativenumber = true
 
-
 -- o.cursorlineopt ='both' -- to enable cursorline!
 --
 --

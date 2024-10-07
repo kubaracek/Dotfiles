@@ -17,7 +17,7 @@ M = {
     }
   },
   base46 = {
-    theme = "catppuccin",
+    theme = "rosepine",
     transparency = false,
   },
 

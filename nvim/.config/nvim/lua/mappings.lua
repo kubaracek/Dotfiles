@@ -1,5 +1,6 @@
 require "nvchad.mappings"
 
+--
 -- TODO kuba. Try to figure if this M table is necessary.
 -- maybe I can use just the map fn for this?
 local M = {}

@@ -118,7 +118,8 @@ return {
   },
 
   { import = "plugins.spec.none-ls" },
-  -- { import = "plugins.spec.neogit" },
+  { import = "plugins.spec.neogit" },
+  -- { import = "plugins.spec.fugitive" },
   { import = "plugins.spec.vim-illuminate" },
   { import = "plugins.spec.lspsaga" },
   -- { import = "plugins.spec.dropbar" },
@@ -142,5 +143,4 @@ return {
   { import = "plugins.spec.nvim-surround" },
   { import = "plugins.spec.faster-jk" },
   -- { import = "plugins.spec.better-escape" },
-  { import = "plugins.spec.fugitive" },
 }

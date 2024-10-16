@@ -43,7 +43,7 @@ M.dap_go = {
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
+-- map("i", "jk", "<ESC>")
 
 -- Show lsp doc for whatever under cursor
 map("n", "K", "<cmd>Lspsaga hover_doc<cr>")

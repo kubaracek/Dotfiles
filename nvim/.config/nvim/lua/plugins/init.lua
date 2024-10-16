@@ -141,4 +141,5 @@ return {
   { import = "plugins.spec.zen-mode" },
   { import = "plugins.spec.nvim-surround" },
   { import = "plugins.spec.faster-jk"},
+  -- { import = "plugins.spec.better-escape"},
 }
